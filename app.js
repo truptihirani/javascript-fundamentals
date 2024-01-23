@@ -157,7 +157,7 @@ switch(dice){
 
 //loops
 
-for(let i=0; i<=5;i++){
+/*for(let i=0; i<=5;i++){
     console.log(`the value of the numbers are` +" "+ i)
 
 }
@@ -165,9 +165,9 @@ let person={
     fname:'Trupti',
     lname:'Hirani',
     age:18
-    
 
-}
+
+}*/
 
 
     
