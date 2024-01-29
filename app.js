@@ -326,7 +326,7 @@ console.log(eachperson)*/
 //find method(is good in returning unique values)
 //incase of multiple values,the first value is returned
 
-const person=[
+/*const person=[
     {fname: 'hirani',age:18, salary:5000, school:'ics',id:1},
     {fname: 'trupti',age:25, salary:2500, school:'maseno',id:5},
     {fname: 'khushi',age:32, salary:9000, school:'moi',id:5},
@@ -339,11 +339,39 @@ const person=[
         
         }    
     })
-    console.log(eachperson)
+    console.log(eachperson)*/
 
     //assignment : reduce array method(single value,array,object)
+    //returns a single array,object,number
+    //accumulator----is the total sum of items you are adding up
+    //iterator----current item within an array in which we are adding to the accumulator
+    //index----index of each item within an array
+    //currentarray----current array in which we are iterating from
+/*const item=[
+    {name:'bike',price:1000},
+    {name:'tv',price:10000},
+    {name:'album',price:500},
+    {name:'book',price:200},
+    {name:'phone',price:20000},
+    {name:'computer',price:10000}
+]
+let total= item.reduce(function(currentTotal, item){
+    return item.price + currentTotal
+},0)
+console.log(total)*/
+
+//Dom-Documant object model
+//getelementbyid
+//getelementbytagname
+//getelementbyclassname
+//queryselector
+//queryselectorAll
+
+const heading=document.getElementById('hirani')
+console.log(heading)
 
 
+//dom in javascript
 
 
 
