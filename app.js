@@ -183,7 +183,7 @@ if(person2.age>=18 && person2.status === "resident"){
     console.log(`cast a vote`)
 }
 else{
-    console,log(`not eligible`)
+    console.log(`not eligible`)
 
 }*/
 
@@ -360,23 +360,244 @@ let total= item.reduce(function(currentTotal, item){
 },0)
 console.log(total)*/
 
-//Dom-Documant object model
+//Dom-Document object model
 //getelementbyid
 //getelementbytagname
 //getelementbyclassname
 //queryselector
 //queryselectorAll
 
-const heading=document.getElementById('hirani')
-console.log(heading)
-
-
-//dom in javascript
-
+/*const heading=document.getElementById('hirani')
+heading.style.backgroundcolor='white'
+heading.style.color='black'
 
 
 
-  
+const mainheading=document.getElementByClassName('Java')
+heading.style.backgroundColor='white'
+heading.style.color='red'
+
+const headingtwo=document.getElementById('world')
+headingtwo.style.color='green'
+headingtwo.style.backgroundColor='white'*/
+
+/*let button = document.getElementById('world')
+button.style.backgroundColor ="green"
+button.style.color ="white"
+button.style.fontSize ="40px"*/
+
+/*let listone=document.getElementById('Trupti')
+listone.style.color="white"
+listone.style.backgroundColor="black"
+listone.style.fontSize="24px";
+
+
+let listtwo=document.getElementById('eldoret')
+listtwo.style.color="yellow"
+listtwo.style.backgroundColor="orange"
+listtwo.style.fontSize="36px";
+
+
+let listthree=document.getElementById('side')
+listthree.style.color="blue"
+listthree.style.backgroundColor="red"
+listthree.style.fontSize="12px";
+
+
+
+let listfour=document.getElementById('space')
+listfour.style.color="red"
+listfour.style.backgroundColor="green"
+listfour.style.fontSize="24px";
+
+
+let listfive=document.getElementById('edge')
+listfive.style.color="white"
+listfive.style.backgroundColor="pink"
+listfive.style.fontSize="40px"*/
+
+
+//queryselector(returns the  first element within the document that matches the specified selector,or group 
+//of selectors)
+/*const container=document.querySelector('div')
+console.log(container)*/
+
+//queryselectorAll(returns a static nodelist representing a list of the document's elements that match the 
+//specified group of selectors)
+/*const container=document.querySelectorAll('div')
+console.log(container)*/
+/*const items=document.querySelectorAll('.list-items');
+console.log(items)*/
+
+//querySelector is used to select a single element from the DOM tree, while queryselectorall is used to select 
+//multiple elements from a DOM tree
+
+//sibling(elements that share the same parent)
+//nextsibling
+//previoussibling
+//nextElementSibling
+//previousElementSibling
+
+//getattribute
+
+
+
+//setattribute
+/*const headingone=document.getElementById('world')
+ let btn = headingone.setAttribute('class','final')*/
+
+//textcontent
+ /*let heading =document.querySelector('.one')
+heading.textContent=" i am the heading"
+console.log(heading)*/
+
+
+//classname(this property is used to set or return the name of the class of an HTML element)
+    //(an identifier-a series of characters consisting of letters,digits,underscores(_) and dollar signs($)
+    // that does not begin with a digit and does not contain spaces)(it will wipe out any existing classes 
+    // while adding the new one)(Convenient when you know this element will not use any other classes)
+    //inner html(to modify the content in the element itself)
+    //outer html(to modify the element itself)
+   //const div=document.createElement('div')
+   //div.className='bold'
+   //console.log(div.outerHTML) 
+  //div.className= 'anotherclass'
+//console.log(div.outerHTML)
+   
+
+//classlist( you can add or remove a class without affecting any other classes the element may have)
+//(toggle and replace)
+//div.classList.add('anotherclass')
+//console.log(div.outerHTML) 
+
+/*let list=document.querySelector('#one')
+let lst=list.classList.contains('one')
+if(lst=one){
+    console.log(`it is one`)
+
+}
+else{
+    console.log(`it is not one`)
+}*/
+
+//EVENTS
+//click events(it fires after full action occurs)
+//mousedown event(it fires after a button is pressed)
+//mouse enter event(it fires after a cursor is moved onto an element)
+//mouse leave event(it fires after a mouse is moved out of an element)
+//keypress event(it fires when a key is pressed)
+//keydown(fires when a key is down)
+//keyup(fires when a key is released)
+
+//CLICK EVENTS
+/*let btn=document.querySelector('.btn')
+let mainheading=document.querySelector('.two')
+
+function oneclick(){
+    mainheading.classList.add('one')
+}
+btn.addEventListener('click',oneclick)*/
+
+/*let headingone=document.querySelector('.two')
+let heading=headingone.classList.contains('two')
+if(heading=two){
+    console.log(`it is one`)
+} 
+else{
+    console.log(`it is not one`)
+}*/
+
+/*let button=document.querySelector('#btn1')
+btn1.onclick=function(){
+    console.log(`btn1 was clicked`)
+}*/
+
+/*let button=document.querySelector('#btn1')
+btn1.onclick=function(evt){
+    console.log(evt)
+    console.log(evt.type)
+    console.log(evt.target)
+    console.log(evt.clientX,evt.clientY)
+}
+let div=document.querySelector("div")
+div.onmouseover=function(evt){
+    console.log(evt)
+    console.log(evt.type)
+    console.log(evt.target)
+    console.log(evt.clientX,evt.clientY)
+
+}*/
+
+/*let button=document.querySelector('#btn1')
+btn1.addEventListener("click",function(){
+    console.log(`button1 was clicked`)
+})*/
+
+/*let button=document.querySelector('#btn1')
+btn1.addEventListener("click",function(){
+    console.log(`button1 was clicked - handler1`)
+})
+
+btn1.addEventListener("click",function(){
+    console.log(`button1 was clicked- handler2`)
+})
+
+
+const handler3=function(){
+    console.log(`button1 was clicked- handler3`)
+}
+/*btn1.addEventListener("click",function(){
+    console.log(`button1 was clicked- handler3`)
+})
+
+btn1.addEventListener("click",function(){
+    console.log(`button1 was clicked- handler4`)
+})
+
+btn1.removeEventListener("click",handler3)*/
+
+/*let modebtn=document.querySelector('#btn1')
+let currmode="light-mode"
+modebtn.addEventListener("click",function(){
+    if(currmode==="light"){
+        currmode="dark";
+        document.querySelector('body').style.backgroundColor="black"
+    }
+    else{
+        currmode="light";
+        document.querySelector('body').style.backgroundColor="white"
+    }
+    console.log(currmode)
+})*/
+
+//let btn=document.querySelector('.btn')
+//btn.style.fontsize="32px"
+
+//Targets and current targets
+//currenttarget(always refer to the element to which the event handler has been attached to)
+//target property(it identifies the element on which the event occured)
+
+let btn=document.querySelectorAll('.btn')
+btn.forEach(function(btns){
+   btns.addEventListener("click",function(e){
+    e.currentTarget.style.color="green"
+   })
+})
+/*const person=[
+    {fname: 'hirani',age:18, salary:5000, school:'ics',id:1},
+    {fname: 'trupti',age:25, salary:2500, school:'maseno',id:5},
+    {fname: 'khushi',age:32, salary:9000, school:'moi',id:5},
+    {fname: 'joe',age:17, salary:10000, school:'kabarak',id:4}
+]
+//callback function
+function age(eachperson){
+    console.log(eachperson.age)
+}
+//high order function
+person.forEach(age)*/
+
+
+
 
 
 
